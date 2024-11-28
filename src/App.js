@@ -7,10 +7,15 @@ import StaticDataPage from "./StaticDataPage";
 const App = () => {
   return (
     <Router>
-      <div className="row py-4">
+      <div className="row py-4 container mx-auto">
         <div className="text-center col-12">
           <h1>Table Data Examples</h1>
           <p>Select a page to view table data</p>
+          <h3>
+            <b>Please Check the output of object generated in console log</b>{" "}
+            you can use to generate your customize search query or sort query
+            based data in table
+          </h3>
           <div className="d-flex justify-content-center gap-3">
             <Link to="/static-data" className="btn btn-primary">
               Go to Static Data Page

@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "custom-table-search": {
+      "signature": "b13630e0985ff05e3211dd4d30bbdd48",
+      "file": true
+    }
+  }
+}

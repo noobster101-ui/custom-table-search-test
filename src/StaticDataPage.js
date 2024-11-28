@@ -90,7 +90,33 @@ const StaticDataPage = () => {
     { key: "id", label: "ID", sortable: true },
     { key: "name", label: "Name", sortable: true, searchable: true },
     { key: "email", label: "Email", sortable: true, searchable: true },
-    { key: "status", label: "Status", sortable: true, searchable: true },
+    {
+      key: "status",
+      label: "Status",
+      textAlign: "center",
+      customRenderer: (row) => (
+        <span
+          style={{
+            color: row.status === "Active" ? "green" : "red",
+          }}
+        >
+          {row.status}
+        </span>
+      ),
+    },
+    {
+      key: "actions",
+      label: "Actions",
+      textAlign: "center",
+      customRenderer: (row) => (
+        <button
+          className="btn btn-primary"
+          onClick={() => alert(`Action for ${row.name}`)}
+        >
+          Action
+        </button>
+      ),
+    },
   ];
 
   // Pagination function
