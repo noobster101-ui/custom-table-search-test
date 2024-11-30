@@ -1,8 +1,8 @@
 {
   "version": "v1",
   "packages": {
-    "custom-table-search": {
-      "signature": "b13630e0985ff05e3211dd4d30bbdd48",
+    "custom-captcha": {
+      "signature": "45561edf836a4a26952a2dc253c6f3ed",
       "file": true
     }
   }

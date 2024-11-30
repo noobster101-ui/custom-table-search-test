@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import ApiDataPage from "./ApiDataPage.js";
+import LoginForm from "./LoginForm.js";
 import StaticDataPage from "./StaticDataPage";
 
 const App = () => {
@@ -20,8 +21,11 @@ const App = () => {
             <Link to="/static-data" className="btn btn-primary">
               Go to Static Data Page
             </Link>
-            <Link to="/api-data" className="btn btn-secondary">
+            <Link to="/api-data" className="btn btn-danger">
               Go to API Data Page
+            </Link>
+            <Link to="/login" className="btn btn-warning">
+              Go to Custom Captcha
             </Link>
           </div>
         </div>
@@ -31,6 +35,7 @@ const App = () => {
           <Routes>
             <Route path="/static-data" element={<StaticDataPage />} />
             <Route path="/api-data" element={<ApiDataPage />} />
+            <Route path="/login" element={<LoginForm />} />
           </Routes>
         </div>
       </div>

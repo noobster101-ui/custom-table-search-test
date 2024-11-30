@@ -1,0 +1,32 @@
+{
+  "name": "custom-captcha",
+  "version": "1.0.0",
+  "description": "A customizable CAPTCHA component for React projects.",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir dist --copy-files",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.2.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "captcha",
+    "react",
+    "security",
+    "component"
+  ],
+  "yalcSig": "45561edf836a4a26952a2dc253c6f3ed"
+}
