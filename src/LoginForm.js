@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { CustomCaptcha, generateCaptcha } from "custom-captcha";
+import { CustomCaptcha, generateCaptcha } from "custom-captcha-react";
 import React, { useState } from "react";
 
 const LoginForm = () => {
