@@ -1,16 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import ApiDataPage from "./ApiDataPage.js";
 import LoginForm from "./LoginForm.js";
 import StaticDataPage from "./StaticDataPage";
-import PrintPage from "./printdummy.js";
 
 const App = () => {
   return (
     <Router>
       <div className="row py-4 container mx-auto">
-        {/* <div className="text-center col-12">
+        <div className="text-center col-12">
           <h1>Table Data Examples</h1>
           <p>Select a page to view table data</p>
           <h3>
@@ -29,7 +28,7 @@ const App = () => {
               Go to Custom Captcha
             </Link>
           </div>
-        </div> */}
+        </div>
 
         {/* Define routes for each page */}
       </div>
@@ -38,7 +37,6 @@ const App = () => {
           <Route path="/static-data" element={<StaticDataPage />} />
           <Route path="/api-data" element={<ApiDataPage />} />
           <Route path="/login" element={<LoginForm />} />
-          <Route path="/testdummy" element={<PrintPage />} />
         </Routes>
       </>
     </Router>
